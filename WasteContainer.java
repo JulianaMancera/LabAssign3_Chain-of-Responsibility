@@ -1,10 +1,12 @@
 public class WasteContainer {
     private String type;
     private int capacity;
+    private boolean isFull;
     
     public WasteContainer(String type, int capacity) {
         this.type = type;
         this.capacity = capacity;
+        this.isFull = true;
     }
     
     public String getType() {
@@ -13,5 +15,14 @@ public class WasteContainer {
     
     public int getCapacity() {
         return capacity;
+    }
+    
+    public boolean isFull() {
+        return isFull;
+    }
+    
+    public void emptyContainer() {
+        this.isFull = false;
+        System.out.println(this.type + " waste container is now empty.");
     }
 }

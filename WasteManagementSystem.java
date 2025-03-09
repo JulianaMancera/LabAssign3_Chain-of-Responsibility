@@ -18,7 +18,7 @@ public class WasteManagementSystem {
         organicCollector.collectWaste(organicBin);
         organicCollector.collectWaste(recyclableBin);
         organicCollector.collectWaste(hazardousBin);
-        recyclableCollector.collectWaste(organicBin);
+        recyclableCollector.collectWaste(organicBin); // Will indicate the bin is empty
         System.out.println();
     }
 }

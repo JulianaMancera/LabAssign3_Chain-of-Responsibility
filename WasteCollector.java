@@ -1,4 +1,3 @@
-// Handler interface defining the chain of responsibility
 abstract class WasteCollector {
     protected WasteCollector nextCollector;
     
